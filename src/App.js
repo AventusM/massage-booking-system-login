@@ -76,11 +76,15 @@ const App = () => {
   return (
     <div>
       <h1>Unity massage booking system</h1>
-      <h2>Kirjautuminen</h2>
+<<<<<<< HEAD
+  <h2>Kirjautuminen</h2>
+=======
+      <h2>Kirjaudu</h2>
+>>>>>>> ab7b03d572527916014063acf752213b0dc317c1
 
-      {user === null && <LoginForm handleLoginFunction={handleLogin} email={email} setEmail={setEmail} password={password} setPassword={setPassword} />}
-      {user !== null && <WelcomeScreen />}
-    </div>
+  { user === null && <LoginForm handleLoginFunction={handleLogin} email={email} setEmail={setEmail} password={password} setPassword={setPassword} /> }
+  { user !== null && <WelcomeScreen /> }
+    </div >
   )
 }
 
